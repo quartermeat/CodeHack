@@ -178,18 +178,13 @@
         <val key="BackCommand.sel#margin" value="0,0,1,1" />
         <val key="BackCommand.sel#padUnit" value="2,2,2,2" />
         <val key="BackCommand.sel#padding" value="1,2,3,2" />
-        <val key="Button.align" value="4" />
-        <border key="Button.border" type="image" i1="Button.borderTop_2.png" i2="Button.borderBottom_2.png" i3="Button.borderLeft_2.png" i4="Button.borderRight_2.png" i5="Button.borderTopL_2.png" i6="Button.borderTopR_2.png" i7="Button.borderBottomL_2.png" i8="Button.borderBottomR_2.png" i9="Button.borderCenter_2.png" />
-        <val key="Button.fgColor" value="ffffff" />
-        <font key="Button.font" type="system" face="0" style="1" size="16" />
         <border key="Button.press#border" type="image" i1="Button.press#borderTop_1.png" i2="Button.press#borderBottom_1.png" i3="Button.press#borderLeft_1.png" i4="Button.press#borderRight_1.png" i5="Button.press#borderTopL_1.png" i6="Button.press#borderTopR_1.png" i7="Button.press#borderBottomL_1.png" i8="Button.press#borderBottomR_1.png" i9="Button.press#borderCenter_1.png" />
         <val key="Button.press#fgColor" value="ffffff" />
         <val key="Button.press#transparency" value="0" />
         <border key="Button.sel#border" type="image" i1="Button.borderTop_2.png" i2="Button.borderBottom_2.png" i3="Button.borderLeft_2.png" i4="Button.borderRight_2.png" i5="Button.borderTopL_2.png" i6="Button.borderTopR_2.png" i7="Button.borderBottomL_2.png" i8="Button.borderBottomR_2.png" i9="Button.borderCenter_2.png" />
         <val key="Button.sel#fgColor" value="ffffff" />
         <val key="Button.sel#transparency" value="0" />
-        <val key="Button.textDecoration" value="8" />
-        <val key="Button.transparency" value="0" />
+        <val key="Button.textDecoration" value="16" />
         <border key="DataSheet.border" type="image" i1="DataSheet.borderTop_1.png" i2="DataSheet.borderBottom_1.png" i3="DataSheet.borderLeft_1.png" i4="DataSheet.borderRight_1.png" i5="DataSheet.borderTopL_1.png" i6="DataSheet.borderTopR_1.png" i7="DataSheet.borderBottomL_1.png" i8="DataSheet.borderBottomR_1.png" i9="DataSheet.borderCenter_1.png" />
         <val key="DataSheet.padUnit" value="2,2,2,2" />
         <val key="DataSheet.padding" value="1,2,1,1" />
@@ -397,4 +392,5 @@
     <image name="Updates.borderTop_1.png" type="multi"  />
     <image name="Updates.borderTopL_1.png" type="multi"  />
     <image name="Updates.borderTopR_1.png" type="multi"  />
+    <ui name="WinDialog" />
 </resource>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<component type="Form" name="Main" cloudDestinationProperty="mainForm" scrollableY="false" layout="GridLayout" gridLayoutRows="4" gridLayoutColumns="1" title="Code Breaker" >
-  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="BorderLayout" borderLayoutAbsoluteCenter="false" borderLayoutSwapEast="Center" borderLayoutSwapWest="Center" borderLayoutSwapSouth="Center" borderLayoutSwapCenter="West" >
-    <component type="Label" name="Label" cloudDestinationProperty="Label" text="Last Guess" textPosition="0" >
+<component type="Form" name="Main" cloudDestinationProperty="mainForm" scrollableY="false" layout="GridLayout" gridLayoutRows="4" gridLayoutColumns="1" title="CODE HACK" >
+  <component type="Container" name="containerLastGuess" cloudDestinationProperty="Container" layout="BorderLayout" borderLayoutAbsoluteCenter="false" borderLayoutSwapEast="Center" borderLayoutSwapWest="Center" borderLayoutSwapSouth="Center" borderLayoutSwapCenter="West" >
+    <component type="Label" name="labelGuessDisplay" cloudDestinationProperty="Label" text="Last Guess" textPosition="0" >
       <layoutConstraint value="North" />
     </component>
-    <component type="Container" name="Container3" cloudDestinationProperty="Container3" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+    <component type="Container" name="containerLastGuessDisplay" cloudDestinationProperty="Container3" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
       <layoutConstraint value="Center" />
       <component type="TextArea" name="textAreaGuess1" cloudBoundProperty="text" cloudDestinationProperty="TextArea" focusable="false" enabled="true" rtl="false" snapToGrid="true" verticalAlignment="4" text="C" growByContent="false" editable="false" columns="1" >
       </component>
@@ -17,11 +17,11 @@
       </component>
     </component>
   </component>
-  <component type="Container" name="Container1" cloudDestinationProperty="Container1" layout="BorderLayout" borderLayoutAbsoluteCenter="false" borderLayoutSwapEast="Center" borderLayoutSwapWest="Center" borderLayoutSwapSouth="Center" borderLayoutSwapCenter="West" >
-    <component type="Label" name="Label5" cloudDestinationProperty="Label5" text="Clues" >
+  <component type="Container" name="containerClue" cloudDestinationProperty="Container1" layout="BorderLayout" borderLayoutAbsoluteCenter="false" borderLayoutSwapEast="Center" borderLayoutSwapWest="Center" borderLayoutSwapSouth="Center" borderLayoutSwapCenter="West" >
+    <component type="Label" name="labeClue" cloudDestinationProperty="Label5" text="Clues" >
       <layoutConstraint value="North" />
     </component>
-    <component type="Container" name="Container4" cloudDestinationProperty="Container4" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+    <component type="Container" name="containerClueDisplay" cloudDestinationProperty="Container4" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
       <layoutConstraint value="Center" />
       <component type="TextArea" name="textAreaClue1" cloudBoundProperty="text" cloudDestinationProperty="TextArea4" focusable="false" text="H" editable="false" columns="1" >
       </component>
@@ -33,24 +33,182 @@
       </component>
     </component>
   </component>
-  <component type="Container" name="Container2" cloudDestinationProperty="Container2" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
-    <component type="GenericSpinner" name="spinner1" cloudDestinationProperty="GenericSpinner" >
-      <custom name="items" type="java.lang.String" array="true" dimensions="1" >
-      </custom>
+  <component type="Container" name="containerGuessSpinner" cloudDestinationProperty="containerGuessSpinner" layout="BorderLayout" borderLayoutAbsoluteCenter="false" borderLayoutSwapEast="Center" borderLayoutSwapWest="Center" borderLayoutSwapSouth="Center" borderLayoutSwapCenter="West" >
+    <component type="Label" name="labelGuess" cloudDestinationProperty="labelGuess" text="Guess" >
+      <layoutConstraint value="North" />
     </component>
-    <component type="GenericSpinner" name="spinner2" cloudDestinationProperty="GenericSpinner2" >
-      <custom name="items" type="java.lang.String" array="true" dimensions="1" >
-      </custom>
-    </component>
-    <component type="GenericSpinner" name="spinner3" cloudDestinationProperty="GenericSpinner3" >
-      <custom name="items" type="java.lang.String" array="true" dimensions="1" >
-      </custom>
-    </component>
-    <component type="GenericSpinner" name="spinner4" cloudDestinationProperty="GenericSpinner1" >
-      <custom name="items" type="java.lang.String" array="true" dimensions="1" >
-      </custom>
+    <component type="Container" name="containerSpinners" cloudDestinationProperty="containerSpinners" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+      <layoutConstraint value="Center" />
+      <component type="GenericSpinner" name="spinner1" cloudDestinationProperty="spinner1" >
+        <custom name="items" type="java.lang.String" array="true" dimensions="1" >
+          <str>0</str>
+          <str>1</str>
+          <str>2</str>
+          <str>3</str>
+          <str>4</str>
+          <str>5</str>
+          <str>6</str>
+          <str>7</str>
+          <str>8</str>
+          <str>9</str>
+          <str>A</str>
+          <str>B</str>
+          <str>C</str>
+          <str>D</str>
+          <str>E</str>
+          <str>F</str>
+          <str>G</str>
+          <str>H</str>
+          <str>I</str>
+          <str>J</str>
+          <str>K</str>
+          <str>L</str>
+          <str>M</str>
+          <str>N</str>
+          <str>O</str>
+          <str>P</str>
+          <str>Q</str>
+          <str>R</str>
+          <str>S</str>
+          <str>T</str>
+          <str>U</str>
+          <str>V</str>
+          <str>W</str>
+          <str>X</str>
+          <str>Y</str>
+          <str>Z</str>
+        </custom>
+      </component>
+      <component type="GenericSpinner" name="spinner2" cloudDestinationProperty="spinner2" >
+        <custom name="items" type="java.lang.String" array="true" dimensions="1" >
+          <str>0</str>
+          <str>1</str>
+          <str>2</str>
+          <str>3</str>
+          <str>4</str>
+          <str>5</str>
+          <str>6</str>
+          <str>7</str>
+          <str>8</str>
+          <str>9</str>
+          <str>A</str>
+          <str>B</str>
+          <str>C</str>
+          <str>D</str>
+          <str>E</str>
+          <str>F</str>
+          <str>G</str>
+          <str>H</str>
+          <str>I</str>
+          <str>J</str>
+          <str>K</str>
+          <str>L</str>
+          <str>M</str>
+          <str>N</str>
+          <str>O</str>
+          <str>P</str>
+          <str>Q</str>
+          <str>R</str>
+          <str>S</str>
+          <str>T</str>
+          <str>U</str>
+          <str>V</str>
+          <str>W</str>
+          <str>X</str>
+          <str>Y</str>
+          <str>Z</str>
+        </custom>
+      </component>
+      <component type="GenericSpinner" name="spinner3" cloudDestinationProperty="spinner3" >
+        <custom name="items" type="java.lang.String" array="true" dimensions="1" >
+          <str>0</str>
+          <str>1</str>
+          <str>2</str>
+          <str>3</str>
+          <str>4</str>
+          <str>5</str>
+          <str>6</str>
+          <str>7</str>
+          <str>8</str>
+          <str>9</str>
+          <str>A</str>
+          <str>B</str>
+          <str>C</str>
+          <str>D</str>
+          <str>E</str>
+          <str>F</str>
+          <str>G</str>
+          <str>H</str>
+          <str>I</str>
+          <str>J</str>
+          <str>K</str>
+          <str>L</str>
+          <str>M</str>
+          <str>N</str>
+          <str>O</str>
+          <str>P</str>
+          <str>Q</str>
+          <str>R</str>
+          <str>S</str>
+          <str>T</str>
+          <str>U</str>
+          <str>V</str>
+          <str>W</str>
+          <str>X</str>
+          <str>Y</str>
+          <str>Z</str>
+        </custom>
+      </component>
+      <component type="GenericSpinner" name="spinner4" cloudDestinationProperty="spinner4" >
+        <custom name="items" type="java.lang.String" array="true" dimensions="1" >
+          <str>0</str>
+          <str>1</str>
+          <str>2</str>
+          <str>3</str>
+          <str>4</str>
+          <str>5</str>
+          <str>6</str>
+          <str>7</str>
+          <str>8</str>
+          <str>9</str>
+          <str>A</str>
+          <str>B</str>
+          <str>C</str>
+          <str>D</str>
+          <str>E</str>
+          <str>F</str>
+          <str>G</str>
+          <str>H</str>
+          <str>I</str>
+          <str>J</str>
+          <str>K</str>
+          <str>L</str>
+          <str>M</str>
+          <str>N</str>
+          <str>O</str>
+          <str>P</str>
+          <str>Q</str>
+          <str>R</str>
+          <str>S</str>
+          <str>T</str>
+          <str>U</str>
+          <str>V</str>
+          <str>W</str>
+          <str>X</str>
+          <str>Y</str>
+          <str>Z</str>
+        </custom>
+      </component>
     </component>
   </component>
-  <component type="Button" name="buttonGuess" cloudDestinationProperty="Button" text="GUESS" >
+  <component type="Container" name="containerGuessButton" cloudDestinationProperty="containerGuessButton" layout="GridLayout" gridLayoutRows="2" gridLayoutColumns="1" >
+    <component type="Button" name="buttonGuess" cloudDestinationProperty="buttonGuess" text="MAKE GUESS" >
+    </component>
+    <component type="Container" name="containerTries" cloudDestinationProperty="containerTries" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="2" >
+      <component type="Label" name="labelTriesLabel" cloudDestinationProperty="labelTriesLabel" text="Number of Tries" >
+      </component>
+      <component type="Label" name="labelTries" cloudDestinationProperty="labelTries" text="" >
+      </component>
+    </component>
   </component>
 </component>

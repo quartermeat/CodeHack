@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Dialog" name="WinDialog" cloudDestinationProperty="WinDialog" layout="FlowLayout" flowLayoutFillRows="false" flowLayoutAlign="1" flowLayoutValign="0" >
+  <component type="Label" name="Label" cloudDestinationProperty="Label" text="It's a BINGO!" >
+  </component>
+  <component type="Label" name="Label1" cloudDestinationProperty="Label1" text="You won in " >
+  </component>
+  <component type="Label" name="labelWinTries" cloudDestinationProperty="labelWinTries" text="" >
+  </component>
+  <component type="Label" name="Label2" cloudDestinationProperty="Label2" text="tries." >
+  </component>
+  <component type="Button" name="buttonOkay" cloudDestinationProperty="buttonOkay" text="Ok!" >
+  </component>
+</component>
